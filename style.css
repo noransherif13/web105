@@ -121,10 +121,15 @@ h3 span {
 }
 
 @media only screen and (max-width: 375px) {
-    .wrapper   {
-        display: flex;
-        flex-direction: column;
+    .wrapper {
+        grid-template-columns: 100%;
+        grid-template-areas: "a""b""c";
     }
+
+    .box {
+        padding: 30px;
+    }
+}
 
     
 }
